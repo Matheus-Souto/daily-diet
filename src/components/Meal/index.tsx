@@ -1,12 +1,21 @@
+import { TouchableOpacityProps, View } from "react-native";
 import { Container, Divider, HourText, MealText, Status } from "./styles";
 
-export function Meal() {
+type Props = TouchableOpacityProps & {
+    hour: string;
+    meal: string;
+    status: string;
+}
+export function Meal({ hour, meal, status }: Props) {
     return (
-        <Container>
-            <HourText>20:00</HourText>
+        <View style={{}}>
+            <Container>
+            <HourText>{hour}</HourText>
             <Divider />
-            <MealText>X-Tudo</MealText>
-            <Status type='SECONDARY' />
+            <MealText>{meal}</MealText>
+            <Status type={status} />
         </Container>
+        </View>
+        
     )
 }

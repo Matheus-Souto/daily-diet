@@ -18,8 +18,8 @@ export const Container = styled(TouchableOpacity)`
     flex-direction: row;
     border-width: 1px;
     border-color: ${({ theme }) => theme.COLORS.GRAY_300};
-    margin-top: 20px;
     padding: 0 10px;
+    margin-bottom: 10px;
 `
 
 export const HourText = styled.Text`
@@ -55,4 +55,13 @@ export const Status = styled(View) <Props>`
     height: 14px;
     background-color: ${({ theme, type }) => type === 'PRIMARY' ? theme.COLORS.GREEN_MID : theme.COLORS.RED_MID};
     border-radius: 14px;
+`
+
+export const DateText = styled.Text`
+    font-family: ${({ theme }) => theme.FONT_FAMILY.BOLD};
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 23.4px;
+    margin-top: 20px;
 `
