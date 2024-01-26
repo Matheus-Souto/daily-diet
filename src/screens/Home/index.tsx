@@ -25,7 +25,6 @@ export function Home() {
                 { hour: '12:30', meal: 'Salada', status: 'PRIMARY' },
             ],
         },
-        // Adicione mais dias conforme necessário
     ];
     return (
         <Container>
@@ -55,8 +54,6 @@ export function Home() {
                     )}
                 />
             </View>
-
-            {/* <Meal hour="20:00" meal="X-Tudo" status="SECONDARY" /> */}
         </Container>
     )
 }

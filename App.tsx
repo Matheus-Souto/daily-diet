@@ -1,5 +1,5 @@
 import { NunitoSans_400Regular, NunitoSans_700Bold, useFonts } from '@expo-google-fonts/nunito-sans';
-import { Home } from '@screens/Home';
+import { Statistics } from '@screens/Statistics';
 import { StatusBar } from 'react-native';
 import { Text } from 'react-native';
 import theme from 'src/theme';
@@ -15,7 +15,7 @@ export default function App() {
       backgroundColor="transparent" 
       translucent
       />
-      { fontsLoaded ? <Home /> : <Text>Loading</Text> }
+      { fontsLoaded ? <Statistics /> : <Text>Loading</Text> }
     </ThemeProvider>
      
   )
